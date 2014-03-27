@@ -1,0 +1,10 @@
+<!--{template common/portal_header}-->
+
+<link rel="stylesheet" type="text/css" id="diy_common" href="data/cache/style_{STYLEID}_portal_common.css?{VERHASH}" />
+
+<style id="diy_style" type="text/css"></style>
+<div class="wp">
+	<!--[diy=diy1]--><div id="diy1" class="area"><div id="framez76Y8o" class="frame move-span cl frame-1"><div id="framez76Y8o_left" class="column frame-1-c"><div id="framez76Y8o_left_temp" class="move-span temp"></div><!--{block/3}--></div></div><div id="frametPgi8j" class="frame move-span cl frame-2-1"><div id="frametPgi8j_left" class="column frame-2-1-l"><div id="frametPgi8j_left_temp" class="move-span temp"></div><!--{block/4}--><!--{block/5}--></div><div id="frametPgi8j_center" class="column frame-2-1-r"><div id="frametPgi8j_center_temp" class="move-span temp"></div><!--{block/6}--></div></div><div id="frameE0R70W" class="pin-icon-title-1 frame move-span cl frame-1"><div class="title frame-title" style='background-repeat:repeat;'><span class="titletext">艺术人文</span></div><div id="frameE0R70W_left" class="column frame-1-c"><div id="frameE0R70W_left_temp" class="move-span temp"></div><!--{block/7}--><!--{block/8}--></div></div><div id="framee3l334" class="pin-icon-title-2 frame move-span cl frame-1"><div class="title frame-title"><span class="titletext">自然</span></div><div id="framee3l334_left" class="column frame-1-c"><div id="framee3l334_left_temp" class="move-span temp"></div><!--{block/9}--><!--{block/10}--></div></div><div id="framePKMQBL" class="pin-icon-title-3 frame move-span cl frame-1"><div class="title frame-title"><span class="titletext">科学技术</span></div><div id="framePKMQBL_left" class="column frame-1-c"><div id="framePKMQBL_left_temp" class="move-span temp"></div><!--{block/11}--><!--{block/12}--></div></div></div><!--[/diy]-->
+</div>
+
+<!--{template common/portal_footer}-->

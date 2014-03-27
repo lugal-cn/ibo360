@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[sitemap.plugin]]></item>
+	<item id="RevisionID"><![CDATA[8166]]></item>
+	<item id="SN"><![CDATA[2014032717jW9ue65Er5]]></item>
+	<item id="RevisionDateline"><![CDATA[1368697709]]></item>
+	<item id="Data">
+		<item id="/app.inc.php"><![CDATA[dea6ecd0dcd6dc4c4f26d8daca123558]]></item>
+		<item id="/cron/cron_sitemap.php"><![CDATA[0f0d6f7300dde10d32b7dc9df330ac93]]></item>
+		<item id="/cron.inc.php"><![CDATA[2e72c342d613a05171a110835dc86d2c]]></item>
+		<item id="/discuz_plugin_sitemap_SC_GBK.xml"><![CDATA[dae26b06364144f5853f50eca5fa66da]]></item>
+		<item id="/discuz_plugin_sitemap_SC_UTF8.xml"><![CDATA[d80d5c030762cfc885d3f22be4aaea93]]></item>
+		<item id="/discuz_plugin_sitemap_TC_BIG5.xml"><![CDATA[814ba11aff8cf3ce2e69b9dacd7cf5b4]]></item>
+		<item id="/discuz_plugin_sitemap_TC_UTF8.xml"><![CDATA[1403339fe1458d7b6cd48556a91d8527]]></item>
+		<item id="/sitemap.fun.php"><![CDATA[81ebe0fb0edc97b0b00575ec756853df]]></item>
+		<item id="/sitemap.inc.php"><![CDATA[381db367bba77b1a7017342bd1d64aa3]]></item>
+		<item id="/template/cron.htm"><![CDATA[a8b8a59e39378c74ef90a514f53350ca]]></item>
+		<item id="/template/sitemap.htm"><![CDATA[6eb91af4a4ba64cb01ac69aaf549b8b7]]></item>
+	</item>
+</root>
