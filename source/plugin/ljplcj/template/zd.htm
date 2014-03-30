@@ -1,0 +1,99 @@
+<form method="post" action="admin.php?action=plugins&operation=config&do=$do&identifier=ljplcj&pmod=guize&op=zd" name="form12" id="form12" enctype="multipart/form-data"> 
+<input type="hidden" value="$row['id']" id="url" class="txt" name="id"> 
+ <input type="hidden" value="{FORMHASH}" id="formhash" name="formhash">
+<table class="tb tb2 ">
+<tbody>
+<!--{if !$id}-->
+<tr>
+  <th class="partition" colspan="15">{lang ljplcj:zd1}</th>
+</tr>
+<tr class="noborder"><td class="vtop rowform">
+<input type="file"  value="" name="logonew" >
+
+</td>
+  <td s="1" class="vtop tips2">{lang ljplcj:zd2}</td>
+</tr>
+<!--{/if}-->
+<tr>
+  <th class="partition" colspan="15">{lang ljplcj:zd3}</th>
+</tr>
+
+<tr>
+  <td s="1" class="td27" colspan="2">{lang ljplcj:zd4}</td>
+</tr>
+<tr class="noborder"><td class="vtop rowform">
+<input type="text" value="$row['mingcheng']" id="url" class="txt" name="mingcheng"> 
+
+</td>
+  <td s="1" class="vtop tips2">{lang ljplcj:zd5}</td>
+</tr>
+<tr>
+  <td s="1" class="td27" colspan="2">{lang ljplcj:zd6}</td>
+</tr>
+<tr class="noborder"><td class="vtop rowform">
+<input type="text" value="$row['zdurl']" id="url" class="txt" name="zdurl"> 
+
+</td>
+  <td s="1" class="vtop tips2">{lang ljplcj:zd7}</td>
+</tr>
+
+
+
+<tr>
+  <td s="1" class="td27" colspan="2">{lang ljplcj:zd8}</td>
+</tr>
+
+<tr class="noborder"><td class="vtop rowform">
+<textarea '..'="" style="width: 300px;" cols="50" id="uid_range" name="bkfid" onkeyup="textareasize(this, 0)" ondblclick="textareasize(this, 1)" rows="6">$row['bkfid']</textarea>
+</td>
+<td s="1" class="vtop tips2">{lang ljplcj:zd9}</td>
+</tr>
+<tr>
+  <td s="1" class="td27" colspan="2">{lang ljplcj:zd10}</td>
+</tr>
+<tr class="noborder"><td class="vtop rowform">
+<input type="text" value="$row[bkgz]" id="num" class="txt" name="bkgz"> 
+
+</td>
+  <td s="1" class="vtop tips2"></td>
+</tr>
+<tr>
+  <td s="1" class="td27" colspan="2">{lang ljplcj:zd11}</td>
+</tr>
+<tr class="noborder"><td class="vtop rowform">
+<input type="text" value="$row[btgz]" id="num" class="txt" name="btgz"> 
+
+</td>
+  <td s="1" class="vtop tips2"></td>
+</tr>
+
+
+<tr>
+  <td s="1" class="td27" colspan="2">{lang ljplcj:zd12}</td>
+</tr>
+<tr class="noborder"><td class="vtop rowform">
+<input type="text" value="$row[nrgz]" id="jump_num" class="txt" name="nrgz"> 
+
+</td>
+  <td s="1" class="vtop tips2"></td>
+</tr>
+<tr>
+  <td s="1" class="td27" colspan="2">{lang ljplcj:zd13}</td>
+</tr>
+<tr class="noborder"><td class="vtop rowform">
+<input type="text" value="$row[fuid]" id="jump_num" class="txt" name="fuid"> 
+
+</td>
+  <td s="1" class="vtop tips2"></td>
+</tr>
+<tr>
+  <td s="1" class="td27" colspan="2">{lang ljplcj:zd14}</td>
+</tr>
+<tr class="noborder"><td class="vtop rowform">
+<input type="text" value="$row[bm]" id="jump_num" class="txt" name="bm"> 
+
+</td>
+  <td s="1" class="vtop tips2">{lang ljplcj:zd15}</td>
+</tr>
+<tr><td colspan="15"><div class="fixsel"><input type="submit" value="{lang ljplcj:zd16}" title="按 Enter 键可随时提交你的修改" name="addsubmit" id="submit_addsubmit" class="btn"></div></td></tr><script type="text/JavaScript">_attachEvent(document.documentElement, 'keydown', function (e) { entersubmit(e, 'addsubmit'); });</script></tbody></table>
+</form>

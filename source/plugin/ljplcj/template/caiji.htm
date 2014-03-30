@@ -1,0 +1,127 @@
+<form action="admin.php?action=plugins&operation=config&do=$do&identifier=ljplcj&pmod=guize&op=caiji&id=$id" method="post">
+<input type="hidden" value="{FORMHASH}" name="formhash" />
+<input type="hidden" value="$id" name="id" />
+<table style="" id="forum" class="tb tb2 nobdb">
+<tbody>
+<tr>
+<td s="1" class="td27" colspan="2">
+{lang ljplcj:caiji1}$row['mingcheng']
+</td>
+</tr>
+<tr>
+<td s="1" class="td27" colspan="2">
+{lang ljplcj:caiji2}
+</td>
+</tr>
+<tr class="noborder">
+	<td class="vtop rowform">
+		<select name="newfid" id='newfid'>
+		<!--{loop $newfid $key $value}-->
+			<option value="$value['1']">$value['0']</option>
+		<!--{/loop}-->
+		</select>
+	</td>
+</tr>
+<tr>
+<td s="1" class="td27" colspan="2">
+{lang ljplcj:caiji3}
+</td>
+</tr>
+<tr>
+<td s="1" class="td27" colspan="2">
+<input type="text" value="$begin" name="begin" style="width:250px"/>
+</td>
+</tr>
+<tr>
+<td s="1" class="td27" colspan="2">
+{lang ljplcj:caiji4}
+</td>
+</tr>
+<tr>
+<td s="1" class="td27" colspan="2">
+<input type="text" value="$end" name="end" style="width:250px"/>
+</td>
+</tr>
+<tr>
+<td s="1" class="td27" colspan="2">
+{lang ljplcj:caiji5}
+</td>
+</tr>
+<tr>
+<td s="1" class="noborder">
+<input type="text" value="$thread" name="thread" style="width:250px"/>
+</td>
+<td s="1" class="vtop tips2">{lang ljplcj:caiji6}</td>
+</tr>
+<tr>
+<td s="1" class="td27" colspan="2">
+{lang ljplcj:caiji7}
+</td>
+</tr>
+<tr>
+<td s="1" class="noborder">
+<input type="radio" value="1" name="shenhe" />{lang ljplcj:caiji8}&nbsp;&nbsp;<input type="radio" value="0" name="shenhe" />{lang ljplcj:caiji9}
+</td>
+<td s="1" class="vtop tips2">{lang ljplcj:caiji10}</td>
+</tr>
+<tr>
+<td s="1" class="td27" colspan="2">
+{lang ljplcj:caiji11}
+</td>
+</tr>
+<tr class="noborder">
+<td class="vtop rowform">
+{$forum_str}</td>
+<td s="1" class="vtop tips2">{lang ljplcj:caiji12}</td>
+</tr>
+<tr>
+<td s="1" class="td27" colspan="2">
+{lang ljplcj:caiji13}
+</td>
+</tr>
+<tr class="noborder">
+	<td class="vtop rowform">
+		<select name="to_threadcate" id='to_threadcate'>
+			<option value='0'></option>
+		</select>
+		<div style='display:none'>
+<script>
+var typeinfo = {$type_info_json};
+</script>
+		</div>
+	</td>
+<script>
+function delOption(oSel){
+	if (oSel.selectedIndex>=0) {
+		oSel.remove(oSel.selectedIndex);
+		delOption(oSel);
+	}
+}
+function changetypes(fid) {
+	var fidtype = typeinfo[fid];
+	var cateSelect = document.getElementById('to_threadcate');
+	delOption(cateSelect);
+	for(var key in fidtype) {
+		cateSelect.add(new Option(fidtype[key], key));
+	}
+}
+</script>
+<td s="1" class="vtop tips2">{lang ljplcj:caiji14}</td>
+</tr>
+<tr>
+<td s="1" class="td27" colspan="2">
+{lang ljplcj:caiji15}
+</td>
+</tr>
+<tr class="noborder">
+<td class="vtop rowform">
+<input type='text' name='fuid' value="$row[fuid]" style="width:250px"/></td>
+<td s="1" class="vtop tips2">{lang ljplcj:caiji16}</td>
+</tr>
+<tr>
+
+</tbody></table>
+<div class="fixsel">
+	<input type="submit"  class="btn" id="submit" name="submit" title="{lang xunku_spider_2012:submit_auto}" value="{lang ljplcj:caiji17}">
+</div>
+</form>

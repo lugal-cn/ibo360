@@ -1,14 +1,14 @@
 <?php if(!defined('IN_DISCUZ')) exit('Access Denied'); 
 0
-|| checktplrefresh('./template/default/common/portal_header.htm', './template/default/common/header_common.htm', 1395924489, '1', './data/template/1_1_common_portal_header.tpl.php', './template/default', 'common/portal_header')
-|| checktplrefresh('./template/default/common/portal_header.htm', './template/default/common/header_qmenu.htm', 1395924489, '1', './data/template/1_1_common_portal_header.tpl.php', './template/default', 'common/portal_header')
+|| checktplrefresh('./template/default/common/portal_header.htm', './template/default/common/header_common.htm', 1396180475, '1', './data/template/1_1_common_portal_header.tpl.php', './template/default', 'common/portal_header')
+|| checktplrefresh('./template/default/common/portal_header.htm', './template/default/common/header_qmenu.htm', 1396180475, '1', './data/template/1_1_common_portal_header.tpl.php', './template/default', 'common/portal_header')
 ;?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET;?>" />
 <?php if($_G['config']['output']['iecompatible']) { ?><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE<?php echo $_G['config']['output']['iecompatible'];?>" /><?php } ?>
-<title><?php if(!empty($navtitle)) { ?><?php echo $navtitle;?> - <?php } if(empty($nobbname)) { ?> <?php echo $_G['setting']['bbname'];?> - <?php } ?> Powered by Discuz!</title>
+<title><?php if(!empty($navtitle)) { ?><?php echo $navtitle;?> - <?php } if(empty($nobbname)) { ?> <?php echo $_G['setting']['bbname'];?> - <?php } ?></title>
 <?php echo $_G['setting']['seohead'];?>
 
 <meta name="keywords" content="<?php if(!empty($metakeywords)) { echo dhtmlspecialchars($metakeywords); } ?>" />
@@ -121,7 +121,7 @@
 <div class="wp">
 <div class="hdc cl"><?php $mnid = getcurrentnav();?><h2><?php if(!isset($_G['setting']['navlogos'][$mnid])) { ?><a href="<?php if($_G['setting']['domain']['app']['default']) { ?>http://<?php echo $_G['setting']['domain']['app']['default'];?>/<?php } else { ?>./<?php } ?>" title="<?php echo $_G['setting']['bbname'];?>"><?php echo $_G['style']['boardlogo'];?></a><?php } else { ?><?php echo $_G['setting']['navlogos'][$mnid];?><?php } ?></h2>
 
-<div id="baidu-search-bar" class="y"><?php include template('common/baidu_search'); ?></div>
+<div id="baidu-search-bar"><?php include template('common/baidu_search'); ?></div>
 </div>
 
 </div><?php echo adshow("subnavbanner/a_mu");?></div>

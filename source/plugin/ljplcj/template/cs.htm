@@ -1,0 +1,26 @@
+<table class="tb tb2 " style="border:1px solid #F0F7FD">
+<tbody><tr><th colspan="15" class="partition">{lang ljplcj:deal1}</th></tr>
+<tr><td>{lang ljplcj:cs_1}</td></tr></tbody></table>
+
+<form name="cpform" method="post" autocomplete="off" action="admin.php?action=plugins&operation=config&do=$do&identifier=ljplcj&pmod=guize&op=cs" id="cpform"><input type="hidden" name="formhash" value="{FORMHASH}"><input type="hidden" id="formscrolltop" name="scrolltop" value=""><input type="hidden" name="anchor" value="">
+<table class="tb tb2 nobdb">
+<tbody>
+<tr><th colspan="0" class="partition">{lang ljplcj:cs_2}<input style="width:350px;" type="text" name="bk_gj" value="$gj"/>&nbsp;&nbsp;<input type="submit" name="bk_submit" value="{lang ljplcj:cs_7}" onclick="aaa(this,1);"><font color="red">&nbsp;&nbsp;{lang ljplcj:cs_3}</font></th></tr>
+<!--{if $bk_gj}-->
+<tr ><td style="width:250px;">{lang ljplcj:cs_4}{$allnum}{lang ljplcj:cs_5}</td><td></td></tr>
+<!--{loop $arr $k $v}-->
+<tr ><td style="width:550px;">$v['url']</td><td></td></tr><!--{/loop}--><!--{/if}-->
+<tr><th colspan="0" class="partition">{lang ljplcj:cs_6}<input style="width:350px;" type="text" name="bt_gj" value="$bt"/>&nbsp;&nbsp;<input type="submit" name="bt_submit" value="{lang ljplcj:cs_7}" onclick="aaa(this,1);"><font color="red">&nbsp;&nbsp;{lang ljplcj:cs_8}</font></th></tr>
+<!--{if $bt_gj}-->
+<tr ><td style="width:500;"><!--{if $title}-->{lang ljplcj:cs_9}<!--{else}-->{lang ljplcj:cs_10}<!--{/if}--></td><td></td></tr>
+<tr ><td style="width:500;">$title</td><td></td></tr><!--{/if}-->
+<tr><th colspan="0" class="partition" >{lang ljplcj:cs_11}<input style="width:350px;" type="text" name="nr_gj" value="$nr"/>&nbsp;&nbsp;<input type="submit" name="nr_submit" value="{lang ljplcj:cs_7}" onclick="aaa(this,1);"><font color="red">&nbsp;&nbsp;{lang ljplcj:cs_12}</font></th></tr>
+<!--{if $nr_gj}-->
+<tr ><td style="width:700px;">$content</td><td></td></tr><!--{/if}-->
+<tr><th colspan="0" class="partition">{lang ljplcj:cs_13}<input style="width:250px;" type="text" name="mbwz" value="$url"/>&nbsp;&nbsp;<input type="submit" name="submit" value="²âÊÔ" onclick="aaa(this,1);"><font color="red">&nbsp;&nbsp;{lang ljplcj:cs_14}</font></th></tr>
+<!--{if $mbwz}-->
+<tr ><td style="width:100px;heigh:100px;"><frameset rows="5" cols="5">
+	<div style="width:100px;heigh:100px;"> $mbwz</div>
+</frameset></td><td></td></tr><!--{/if}-->
+</tbody></table>
+</form>

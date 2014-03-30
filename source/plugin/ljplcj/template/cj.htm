@@ -1,0 +1,16 @@
+<script type="javascript" src="static/js/calendar.js"></script>
+<table class="tb tb2 " style="border:1px solid #F0F7FD">
+<tbody><tr><th colspan="15" class="partition">{lang ljplcj:deal1}</th></tr>
+<tr><td>{lang ljplcj:cj1}</td></tr></tbody></table>
+<table class="tb tb2 nobdb">
+<tbody><tr><th colspan="15" class="partition">{lang ljplcj:cj2}</th></tr>
+<tr class="header"><th>{lang ljplcj:cj3}</th><th>{lang ljplcj:cj4}</th><th>{lang ljplcj:cj5}</th><th>{lang ljplcj:cj6}</th><th>{lang ljplcj:cj7}</th><th>{lang ljplcj:cj8}</th><th>{lang ljplcj:cj9}</th></tr>
+<!--{loop $numarr $k $v}-->
+<tr class="header"><th>$v['mingcheng']</th><th><!--{if $v['thread']}-->{lang ljplcj:cj10}<!--{else}-->{lang ljplcj:cj11}<!--{/if}--></th><th><!--{if $v['thread']}-->$v['thread']<!--{else}-->$v['newfid']<!--{/if}--></th><th><!--{if !$v['thread']}-->$v['begin']<!--{/if}--></th><th><!--{if !$v['thread']}-->$v['end']<!--{/if}--></th><th>$forumarray[$v['tfid']]['name']</th><th><a href="admin.php?action=plugins&operation=config&do=$do&identifier=ljplcj&pmod=guize&op=deal&id=$v['id']">{lang ljplcj:cj12}</a></th><th><a href="admin.php?action=plugins&operation=config&do=$do&identifier=ljplcj&pmod=guize&op=sc&formhash={FORMHASH}&id=$v['id']">{lang ljplcj:cj13}</a></th></tr>
+<!--{/loop}-->
+<!--{if method_exists(helper_page,multi)}-->
+	<tr><td colspan="16" style="text-align:right"><!--{eval  echo helper_page::multi($num, $perpage, $curpage, 'admin.php?action=plugins&operation=config&do=14&identifier=ljplcj&pmod=guize&op=cj',0, 10, FALSE,FALSE);}--></td></tr>
+	<!--{else}-->
+	<tr><td colspan="16" style="text-align:right"><!--{eval  echo multi($num, $perpage, $curpage, 'admin.php?action=plugins&operation=config&do=14&identifier=ljplcj&pmod=guize&op=cj',0, 10, FALSE,FALSE);}--></td></tr>
+	<!--{/if}-->
+</tbody></table>

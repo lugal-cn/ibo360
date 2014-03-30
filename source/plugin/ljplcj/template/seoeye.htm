@@ -1,0 +1,20 @@
+<script type="javascript" src="static/js/calendar.js"></script>
+<form name="cpform" method="post" autocomplete="off" action="admin.php?action=plugins&operation=config&do=14&identifier=ljplcj&pmod=guize&op=seo" id="cpform"><input type="hidden" name="formhash" value="{FORMHASH}"><input type="hidden" id="formscrolltop" name="scrolltop" value=""><input type="hidden" name="anchor" value="">
+<table class="tb tb2 " style="border:1px solid #F0F7FD">
+<tbody><tr><th colspan="15" class="partition">{lang ljplcj:seoeye1}</th></tr>
+<tr><td>{lang ljplcj:seoeye2}<input type="text" name="key"  value="$_GET['key']" class="txt" style="width:200px;"> <input type="submit" value="{lang ljplcj:seoeye12}" class="btn" name="searchsubmit"></td></tr></tbody></table>
+</form>
+<form name="cpform" method="post" autocomplete="off" action="admin.php?action=plugins&amp;operation=config&amp;identifier=sanree_brand_news&amp;pmod=admincp&amp;act=news&amp;page=1" id="cpform"><input type="hidden" name="formhash" value="c4ca2bd7"><input type="hidden" id="formscrolltop" name="scrolltop" value=""><input type="hidden" name="anchor" value="">
+<table class="tb tb2 nobdb">
+<tbody><tr><th colspan="15" class="partition">{lang ljplcj:seoeye3}</th></tr>
+<tr class="header"><th>{lang ljplcj:seoeye4}</th><th>{lang ljplcj:seoeye5}</th><th>{lang ljplcj:seoeye6}</th><th>{lang ljplcj:seoeye7}</th><th>{lang ljplcj:seoeye8}</th><th>{lang ljplcj:seoeye9}</th></tr>
+<!--{loop $seoarr $k $v}-->
+<tr class="header"><th>$v['mingcheng']</th><th>$v['zdurl']</th><th>$v['bkgz']</th><th>$v['btgz']</th><th>$v['nrgz']</th><th><a href="admin.php?action=plugins&operation=config&do=$do&identifier=ljplcj&pmod=guize&op=zd&id=$v['id']">{lang ljplcj:seoeye10}</a>&nbsp;<a href="admin.php?action=plugins&operation=config&do=$do&identifier=ljplcj&pmod=guize&op=caiji&id=$v['id']">{lang ljplcj:seoeye11}</a>&nbsp;<a href="admin.php?action=plugins&operation=config&do=$do&identifier=ljplcj&pmod=guize&op=del&id=$v['id']&formhash={FORMHASH}">{lang ljplcj:cj13}</a></th></tr>
+<!--{/loop}-->
+<!--{if method_exists(helper_page,multi)}-->
+	<tr><td colspan="16" style="text-align:right"><!--{eval  echo helper_page::multi($num, $perpage, $curpage, 'admin.php?action=plugins&operation=config&do=14&identifier=ljplcj&pmod=guize',0, 10, FALSE,FALSE);}--></td></tr>
+	<!--{else}-->
+	<tr><td colspan="16" style="text-align:right"><!--{eval  echo multi($num, $perpage, $curpage, 'admin.php?action=plugins&operation=config&do=14&identifier=ljplcj&pmod=guize',0, 10, FALSE,FALSE);}--></td></tr>
+	<!--{/if}-->
+</tbody></table>
+</form>

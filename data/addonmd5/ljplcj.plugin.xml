@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[ljplcj.plugin]]></item>
+	<item id="RevisionID"><![CDATA[13076]]></item>
+	<item id="SN"><![CDATA[2014033015zzu3fgZ32F]]></item>
+	<item id="RevisionDateline"><![CDATA[1385546401]]></item>
+	<item id="Data">
+		<item id="/app.inc.php"><![CDATA[8e48fd7c3f89e7febebf307f9cb34f29]]></item>
+		<item id="/discuz_plugin_ljplcj_SC_GBK.xml"><![CDATA[0cd0aa108321c2aeb1f09892418054f9]]></item>
+		<item id="/discuz_plugin_ljplcj_SC_UTF8.xml"><![CDATA[0c859cc7444c163ddfae8a3886a35f5b]]></item>
+		<item id="/discuz_plugin_ljplcj_TC_BIG5.xml"><![CDATA[b5e0c3e4552643a40d0ca5b0d933b11d]]></item>
+		<item id="/discuz_plugin_ljplcj_TC_UTF8.xml"><![CDATA[f7a8db5deb891cb242a4a2073fbc2bb7]]></item>
+		<item id="/function.inc.php"><![CDATA[a5a5513ab6d96dfc962e7650c7302689]]></item>
+		<item id="/guize.inc.php"><![CDATA[55fc7add7c8e8b740faac79cf7a44fa2]]></item>
+		<item id="/include/caiji.php"><![CDATA[cada1ee566182099433295013969949d]]></item>
+		<item id="/include/cs.php"><![CDATA[0025dab3f99947a66907d11edd165c4f]]></item>
+		<item id="/include/delete.php"><![CDATA[af05eca8274a6f9da4c13a3b3601bd80]]></item>
+		<item id="/include/log.php"><![CDATA[ea9431e6bd13cb9e1a264cfe8ad25e2d]]></item>
+		<item id="/include/yun.php"><![CDATA[5df3b4707931e3a1571be1f36fc93193]]></item>
+		<item id="/include/zd.php"><![CDATA[c07b3f3137dee54092f1ac30f5d56b63]]></item>
+		<item id="/install.php"><![CDATA[50516a1f12d888f39060ecf4781f3c71]]></item>
+		<item id="/ljcaiji.inc.php"><![CDATA[c34d56496304d41ac512beb5f9ef70d4]]></item>
+		<item id="/seo.inc.php"><![CDATA[994d031991153cf12595b4bf164bb91a]]></item>
+		<item id="/simple_html_dom.php"><![CDATA[a012f3ed6c8ce2a82ad7f1313920cb0d]]></item>
+		<item id="/table/table_plugin_forum_forum.php"><![CDATA[f5c5476aae27bbf2803800e929a7f4bc]]></item>
+		<item id="/table/table_plugin_lj_cjurl.php"><![CDATA[0a25acdf2186ca542649f4d1650ed9bf]]></item>
+		<item id="/table/table_plugin_ljcaiji.php"><![CDATA[e8b9320db7edb6d964a566b3d3180b06]]></item>
+		<item id="/table/table_plugin_ljcaiji_log.php"><![CDATA[7b0a662ce409e75dd14998d0238270ea]]></item>
+		<item id="/table/table_plugin_log_caiji.php"><![CDATA[3427449525b7baed60bcc20222de9c82]]></item>
+		<item id="/table/table_plugin_now_ljcaiji.php"><![CDATA[3a1e9b36f671d6ff3d6112318b4add21]]></item>
+		<item id="/template/caiji.htm"><![CDATA[f864842f32bd1ade379dfa833d527ca9]]></item>
+		<item id="/template/cj.htm"><![CDATA[c5c4fd9f5c165a6f191054faea52b6d3]]></item>
+		<item id="/template/cs.htm"><![CDATA[8736234525412fd8f716872a2656b038]]></item>
+		<item id="/template/deal.htm"><![CDATA[a248505a724a4bbec44cc63156ad3745]]></item>
+		<item id="/template/nav.htm"><![CDATA[c9e43fbf7cd6fc79a259f9f4f35637a6]]></item>
+		<item id="/template/seoeye.htm"><![CDATA[652dcbea884d0a9b83fc82472423f601]]></item>
+		<item id="/template/zd.htm"><![CDATA[e7e98595b1d9f3e4b44d8035bd76594e]]></item>
+		<item id="/uninstall.php"><![CDATA[45a3691571c6afd37830f3a440cc4c23]]></item>
+		<item id="/upgrade.php"><![CDATA[1c9b7a367d2e4a788a36b551e8b323c7]]></item>
+	</item>
+</root>

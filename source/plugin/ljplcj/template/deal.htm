@@ -1,0 +1,23 @@
+<table class="tb tb2 " style="border:1px solid #F0F7FD">
+<tbody><tr><th colspan="15" class="partition">{lang ljplcj:deal1}</th></tr>
+<tr><td>{lang ljplcj:deal2}</td></tr></tbody></table>
+<table class="tb tb2 nobdb">
+<tbody><tr><th colspan="15" class="partition">{lang ljplcj:deal3}</th></tr>
+<!--{if !$row1}-->
+<tr><td colspan="2"><font color='red'>{lang ljplcj:deal4}<!--{if !$thread}-->{$allnum}<!--{else}-->1<!--{/if}-->{lang ljplcj:deal5},{$cg}{lang ljplcj:deal6},{$sb}{lang ljplcj:deal7}</font></td></tr>
+<!--{else}-->
+<tr><td colspan="2"><font color='red'>{lang ljplcj:deal8}{$row['allnum']}{lang ljplcj:deal5},{lang ljplcj:deal9}{$allnum}{lang ljplcj:deal10}</font></td></tr>
+<!--{/if}-->
+<!--{loop $log $key $val}-->
+<tr class="header"><th style="width:100px;">$row['mingcheng']</th><th>$val[title]</th><th>$val[url]</th><th><font color='green'>$val[sign]</font></th></tr>
+<!--{/loop}-->
+</tbody></table>
+
+<script language="JavaScript">
+function myrefresh(){
+window.location.reload();
+}
+<!--{if $row1&&!$thread}-->
+setTimeout('myrefresh()',5000); //指定1秒刷新一次
+<!--{/if}-->
+</script>
