@@ -7,7 +7,7 @@ sites/default/files
 .buildpath
 .project
 .settings/*
+data/cache/*
 data/log/*
 data/sysdata/*
 data/template/*
-data/cache/*
