@@ -62,6 +62,7 @@
 						<!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}-->$nav[code]<!--{/if}-->
 					<!--{/loop}-->
 					<!--{hook/global_cpnav_extra1}-->
+					<!--{subtemplate common/top_header_userstatus}-->
 				</div>
 				<div class="y">
 					<a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="{lang switch_blind}" class="switchblind">{lang switch_blind}</a>
@@ -69,9 +70,9 @@
 					<!--{loop $_G['setting']['topnavs'][1] $nav}-->
 						<!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}-->$nav[code]<!--{/if}-->
 					<!--{/loop}-->
-					<!--{if empty($_G['disabledwidthauto']) && $_G['setting']['switchwidthauto']}-->
+					
 						<a href="javascript:;" id="switchwidth" onclick="widthauto(this)" title="{if widthauto()}{lang switch_narrow}{else}{lang switch_wide}{/if}" class="switchwidth"><!--{if widthauto()}-->{lang switch_narrow}<!--{else}-->{lang switch_wide}<!--{/if}--></a>
-					<!--{/if}-->
+					
 					<!--{if $_G['uid'] && !empty($_G['style']['extstyle'])}--><a id="sslct" href="javascript:;" onmouseover="delayShow(this, function() {showMenu({'ctrlid':'sslct','pos':'34!'})});">{lang changestyle}</a><!--{/if}-->
 					<!--{if check_diy_perm($topic)}-->
 						$diynav

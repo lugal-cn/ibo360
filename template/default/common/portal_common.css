@@ -18,3 +18,22 @@
 	background: transparent url({IMGDIR}/pin-icon-3.png) no-repeat 0 100%;
 	padding-left: 30px;
 }
+
+.sp-title-list ul,
+.sp-title-list ul li {
+	float: left;
+}
+
+.sp-title-list .xl1 ul li {
+	width: 15%;
+	background-image: url();
+}
+
+.bowuguangonggao {
+	min-height: 140px;
+}
+
+#nv {
+	border: none;
+	display: none;
+}
