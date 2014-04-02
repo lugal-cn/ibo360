@@ -1,0 +1,60 @@
+{subtemplate common/header}
+<link href="./source/plugin/kylefu_qrcode_login/img/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{KYLEFU_API_URL}static/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+var ajaxlock = false;
+var ajaxhandle;
+var code = '{$logincode}';
+var sync = 1;
+function kylefu_qrcode_login(){
+	if (!ajaxlock) {
+		ajaxlock = true;
+		syclogin();
+	}
+};
+
+function syclogin(){
+	jQuery.post(location.href,{code:code},function(json){
+		if (json.status) {
+			if (json.status==201) {
+				jQuery(".scan").html("{$_lang[scan]}").show();
+				sync++;
+				if(sync>5)jQuery(".scan").html("{$_lang[scan_dispose]}");
+				setTimeout(function(){
+					syclogin();
+				},1000)
+			}else if (json.status==200) {
+				jQuery(".scan").html("{$_lang[scan_do]}");
+				if (json.data){
+					clearInterval(ajaxhandle);
+					window.location.href=location.href+':do&data='+json.data;
+				}
+			}else{
+				jQuery(".scan").html("{$_lang[error_cnc]}").show();
+				setInterval(function(){
+					window.location.reload();
+				},1000)
+			}
+		}
+		ajaxlock = false;
+	},'json');
+};
+
+jQuery(function(){
+	jQuery("#qrcode").hover(function(){
+         jQuery(this).next().fadeIn(500);
+	},function(){
+         jQuery(this).next().fadeOut(500);
+	});
+	ajaxhandle = setInterval("kylefu_qrcode_login()",1000);
+});
+</script>
+<div id="wp" class="wp">
+	<div class="qrcode-main">
+    	<h1></h1>
+    	<img src="{$qrimg}" id="qrcode" />
+        <img src="./source/plugin/kylefu_qrcode_login/img/login_guide17ced3.png" class="guide"  />
+        <div class="scan"></div>
+    </div>
+</div>
+{subtemplate common/footer}

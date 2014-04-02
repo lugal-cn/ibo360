@@ -1,0 +1,39 @@
+.qrcode-main{
+	background:#6B747A url(bg_universal17ced3.png) repeat;
+	text-align:center;
+	padding:150px 0 100px 0;
+	position:relative;
+}
+	.qrcode-main h1{
+		display:block;
+		position:absolute;
+		background:url(logo_login17ced3.png) no-repeat;
+		width:214px;
+		height:33px;
+		left:50%;
+		top:50px;
+		margin-left:-107px;
+	}
+	
+	.qrcode-main .guide{
+		display:none;
+		position:absolute;
+		top:30px;
+		right:0;	
+	}
+	.qrcode-main .scan{
+		display:none;
+		position:absolute;
+		background:#6B747A;
+		left:50%;
+		top:50%;
+		margin-left:-125px;
+		margin-top:-25px;
+		width:250px;
+		height:50px;
+		line-height:50px;
+		border-radius:12px;
+		font-size:14px;
+		color:#bdc6cb;
+		text-shadow:0 1px 0px #505050
+	}

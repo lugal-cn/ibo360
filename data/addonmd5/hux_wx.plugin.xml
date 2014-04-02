@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[hux_wx.plugin]]></item>
+	<item id="RevisionID"><![CDATA[30021]]></item>
+	<item id="SN"><![CDATA[2014040216sS21Bp98Mo]]></item>
+	<item id="RevisionDateline"><![CDATA[1394676001]]></item>
+	<item id="Data">
+		<item id="/admin.inc.php"><![CDATA[abd53362a5ddb431e3c314703cf86798]]></item>
+		<item id="/admincp.inc.php"><![CDATA[974517e135ed89a31b4e4131054e7e69]]></item>
+		<item id="/api.php"><![CDATA[87fa46686bb9609cf4cbc214a1dd14b9]]></item>
+		<item id="/bind.inc.php"><![CDATA[bedda3d7c94987219b91c0f9a52753f9]]></item>
+		<item id="/buy.inc.php"><![CDATA[acb3e7eac829d84cbcd97e121ac0a537]]></item>
+		<item id="/caidan.inc.php"><![CDATA[be525fee7523578ed9fa59e0f5bb39a7]]></item>
+		<item id="/discuz_plugin_hux_wx_SC_GBK.xml"><![CDATA[baacb2d63efc1e4eb70bd1c2eadfed51]]></item>
+		<item id="/discuz_plugin_hux_wx_SC_UTF8.xml"><![CDATA[cfdba67d74175687b935d9a7c180f0bb]]></item>
+		<item id="/discuz_plugin_hux_wx_TC_BIG5.xml"><![CDATA[23a38aa246d7bd065740552d44bfca1c]]></item>
+		<item id="/discuz_plugin_hux_wx_TC_UTF8.xml"><![CDATA[1304d444509d4388606348f05616471f]]></item>
+		<item id="/hook.class.php"><![CDATA[c9e667df3dd84c15e8578fbc6c6ccd29]]></item>
+		<item id="/hux.inc.php"><![CDATA[97c895296403976854fdad8f49b00f59]]></item>
+		<item id="/hux_wx.inc.php"><![CDATA[41992ccc1e938ee58153e2cdd645cbea]]></item>
+		<item id="/images/bg1.jpg"><![CDATA[e46c245e76f2f59b1b40b04c3731a054]]></item>
+		<item id="/images/bg2.jpg"><![CDATA[41dbb3e49c50aa780d2a0ab58198717f]]></item>
+		<item id="/images/bg3.jpg"><![CDATA[05d3beb7e65334f5e0c8d4bd2456a813]]></item>
+		<item id="/images/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/images/weixin.png"><![CDATA[876501b68f43b2bded579c933d12891f]]></item>
+		<item id="/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/install.php"><![CDATA[384fd02582688ff1499685b5c77ff8d6]]></item>
+		<item id="/js/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/js/jquery.easing.min.js"><![CDATA[3eac3c72434a0945b92dd4a01f7b6b4e]]></item>
+		<item id="/js/jquery.min.js"><![CDATA[bee39a0a05ad166b735fd20040f74ab7]]></item>
+		<item id="/js/jQueryRotate.2.2.js"><![CDATA[9a522218411f16a1167ae95b47120748]]></item>
+		<item id="/mod/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/qr.inc.php"><![CDATA[ed6e3f0d1650fad294906a3d5d1ea004]]></item>
+		<item id="/table/index.htm"><![CDATA[d41d8cd98f00b204e9800998ecf8427e]]></item>
+		<item id="/table/table_hux_common_member.php"><![CDATA[159a98ffa15673647d8a9227d4049260]]></item>
+		<item id="/table/table_hux_common_member_count.php"><![CDATA[52de22e0e3e032d0260af9b14bf71ff9]]></item>
+		<item id="/table/table_hux_forum_forum.php"><![CDATA[ffe2507706f49f36363f089227a8d1c2]]></item>
+		<item id="/table/table_hux_forum_threadimage.php"><![CDATA[a0699809825a582e506af904ef1ec07c]]></item>
+		<item id="/table/table_hux_uc_members.php"><![CDATA[b2cd0c8d2564b15dcd4fb3c8a333b6f4]]></item>
+		<item id="/table/table_hux_wx.php"><![CDATA[c483e35865c123a00551cd85bd8294ad]]></item>
+		<item id="/table/table_hux_wx_action.php"><![CDATA[e0e09ace935edef1c242b301db5e1e6f]]></item>
+		<item id="/table/table_hux_wx_config.php"><![CDATA[dfd494938e06c0ffee8285a3063f8a4d]]></item>
+		<item id="/table/table_hux_wx_userjp.php"><![CDATA[e2c56f9e8511ab9a3d3f4b4d0b703d96]]></item>
+		<item id="/template/index.htm"><![CDATA[30735111bcd39472d3b6820028c0495b]]></item>
+		<item id="/uninstall.php"><![CDATA[d71b05a01f4cb1e0949f19e0158dc82d]]></item>
+		<item id="/upgrade.php"><![CDATA[6ba52d6057b8f5e251fa142c8e8a196d]]></item>
+		<item id="/weixin.php"><![CDATA[7dc0836b65b8bb1434300f71b5ee753a]]></item>
+	</item>
+</root>

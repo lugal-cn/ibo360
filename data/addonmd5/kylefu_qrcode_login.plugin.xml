@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Addon MD5]]></item>
+	<item id="ID"><![CDATA[kylefu_qrcode_login.plugin]]></item>
+	<item id="RevisionID"><![CDATA[30487]]></item>
+	<item id="SN"><![CDATA[20140330124JX7q9Clpi]]></item>
+	<item id="RevisionDateline"><![CDATA[1390528801]]></item>
+	<item id="Data">
+		<item id="/discuz_plugin_kylefu_qrcode_login_SC_GBK.xml"><![CDATA[a1b83e77dbf82842fe8efe8ae89f86c4]]></item>
+		<item id="/discuz_plugin_kylefu_qrcode_login_SC_UTF8.xml"><![CDATA[e52e0a4e6add45a36b8213c944621509]]></item>
+		<item id="/discuz_plugin_kylefu_qrcode_login_TC_BIG5.xml"><![CDATA[b0912fe7b076419746d30163c7506a8c]]></item>
+		<item id="/discuz_plugin_kylefu_qrcode_login_TC_UTF8.xml"><![CDATA[80d0a1915548b0ef92577e20e9cef42f]]></item>
+		<item id="/do.inc.php"><![CDATA[9d0049fc6f55a484997d8da134b3809b]]></item>
+		<item id="/function/function.qrcode.login.php"><![CDATA[67d3aec8aee2ccc28ea1ed380feac91d]]></item>
+		<item id="/img/bg_universal17ced3.png"><![CDATA[d0b443e6e53ac97b2a96c347ee890ace]]></item>
+		<item id="/img/login_guide17ced3.png"><![CDATA[f7254f9cce4ea13e835636c051b07e8b]]></item>
+		<item id="/img/logo_login17ced3.png"><![CDATA[627e802a5bef4eeceac683a96928058f]]></item>
+		<item id="/img/qrcode.png"><![CDATA[e4c514ba37c2f41aad3324380a472c8a]]></item>
+		<item id="/img/style.css"><![CDATA[9bb136ce95cdfa5db658bf42432aee32]]></item>
+		<item id="/inc/user.config.inc.php"><![CDATA[bdfb7146147d8bbb209df9c572a93855]]></item>
+		<item id="/inc/user.del.inc.php"><![CDATA[37fc7d3b134ce3e6367938d2ccbce1fb]]></item>
+		<item id="/install.php"><![CDATA[6c96020dda85c369359c495e8666af75]]></item>
+		<item id="/kylefu_qrcode_login.inc.php"><![CDATA[71d09438a622dac5026a0863932367bc]]></item>
+		<item id="/qrcode.class.php"><![CDATA[c897a806ecbf5ad9f2c6796e168b0f94]]></item>
+		<item id="/table/table_bind.php"><![CDATA[738fca71d76ccbe1c2895160e9d683f3]]></item>
+		<item id="/template/attention.htm"><![CDATA[3e34468673d4b26bb02d33c7d858f411]]></item>
+		<item id="/template/bind.htm"><![CDATA[73c658c23f21e2a766ff800265b92e46]]></item>
+		<item id="/template/index.htm"><![CDATA[b5cc3ca3594df053b2c25d88b7e83566]]></item>
+		<item id="/template/touch/index.htm"><![CDATA[02a713e309705381abe77b54b54b5482]]></item>
+		<item id="/uninstall.php"><![CDATA[e29d06d691470ebdbd7273b5417a7ba7]]></item>
+		<item id="/user.inc.php"><![CDATA[05a4a677bb6c2bfa7bc0bc677f24b2e8]]></item>
+	</item>
+</root>

@@ -61,6 +61,7 @@
 					<!--{loop $_G['setting']['topnavs'][0] $nav}-->
 						<!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}-->$nav[code]<!--{/if}-->
 					<!--{/loop}-->
+					<!-- <!--{hook/global_nav_extra}--> -->
 					<!--{hook/global_cpnav_extra1}-->
 					<!--{subtemplate common/top_header_userstatus}-->
 				</div>

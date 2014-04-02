@@ -1,0 +1,70 @@
+{subtemplate common/header}
+<link href="./source/plugin/kylefu_qrcode_login/img/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{QRCODE_API_URL}static/js/jquery-1.7.2.min.js"></script>
+<div class="ptm wp cl">
+	<div class="bm">
+    <div class="bm_h bbs" id="main_hnav">
+    <span class="y">
+    <a href="member.php?mod={$_G[setting][regname]}" class="xi2">$_G['setting']['reglinkname']</a>
+    </span>
+    <h3 id="layer_reginfo_t" class="xs2">{$_lang[bind]} , {$_lang[bind_tips]}</h3>
+    </div>
+	<form method="post" autocomplete="off" name="bind" action="">
+    <div class="mtw">
+        <div class="rfm">
+            <table>
+              <tr>
+                  <th><span class="rq">*</span><label>{lang username}:</label></th>
+                  <td><input type="text" class="px" tabindex="1" size="20" maxlength="15" name="username" value="{$_G[member][username]}" required></td>
+              </tr>
+            </table>
+        <input type="hidden" name="formhash" value="{FORMHASH}" />
+        </div>
+        <div class="rfm">
+            <table>
+              <tr>
+                  <th><span class="rq">*</span><label>{lang login_password}:</label></th>
+                  <td><input type="password" class="px" tabindex="1" size="20" maxlength="15" name="password" required></td>
+              </tr>
+            </table>
+        </div>
+        <!--{if empty($_GET['auth']) || $questionexist}-->
+        <div class="rfm">
+            <table>
+            <tr>
+                <th>{lang security_q}:</th>
+                <td><select id="loginquestionid" width="205" name="questionid"{if !$questionexist} onchange="if(this.value > 0) {document.getElementById('loginanswer_row').style.display='';} else {document.getElementById('loginanswer_row').style.display='none';}"<!--{/if}-->>
+                    <option value="0"><!--{if $questionexist}-->{lang security_question_0}<!--{else}-->{lang security_question}<!--{/if}--></option>
+                    <option value="1">{lang security_question_1}</option>
+                    <option value="2">{lang security_question_2}</option>
+                    <option value="3">{lang security_question_3}</option>
+                    <option value="4">{lang security_question_4}</option>
+                    <option value="5">{lang security_question_5}</option>
+                    <option value="6">{lang security_question_6}</option>
+                    <option value="7">{lang security_question_7}</option>
+                </select></td>
+            </tr>
+            </table>
+        </div>
+        <div class="rfm" id="loginanswer_row" {if !$questionexist} style="display:none"{/if}>
+            <table>
+              <tr>
+                <th>{lang security_a}:</th>
+                <td><input type="text" name="answer" id="loginanswer" autocomplete="off" size="20" class="px p_fre" tabindex="1" /></td>
+              </tr>
+            </table>
+        </div>
+        <!--{/if}-->
+        <div class="rfm mbw bw0">
+            <table>
+              <tr>
+                <th>&nbsp;</th>
+                <td><button class="pn pnc"  type="submit" name="submit" value="true" tabindex="1"><strong>{lang submit}</strong></button></td>
+              </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+    </div>
+</div>
+{subtemplate common/footer}

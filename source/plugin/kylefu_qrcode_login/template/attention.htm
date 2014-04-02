@@ -1,0 +1,39 @@
+{subtemplate common/header}
+<link href="./source/plugin/kylefu_qrcode_login/img/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{KYLEFU_API_URL}static/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+jQuery(function(){
+	ajaxhandle = setInterval("kylefu_qrcode_login()",1000);
+})
+var ajaxlock = false;
+var ajaxhandle;
+function kylefu_qrcode_login(){
+	if (!ajaxlock) {
+		ajaxlock = true;
+		jQuery.post(location.href,{code:'kylefu_qrcode'},function(json){
+			if (json.status) {
+				if (json.status=='ok') {
+					window.location.reload();
+					clearInterval(ajaxhandle);
+				}
+			}
+			ajaxlock = false;
+		},'json');
+	}
+}
+</script>
+<div class="ptm wp cl">
+	<div class="bm">
+        <div class="bm_h bbs" id="main_hnav">
+        <h3 id="layer_reginfo_t" class="xs2">{$_lang[attention]}</h3>
+        </div>
+        <div class="hm">
+        	<!--{if $_G['cache']['plugin']['kylefu_qrcode_login']['qrcode_url']}-->
+            <img src="{$_G['cache']['plugin']['kylefu_qrcode_login']['qrcode_url']}" />
+            <!--{else}-->
+            <p class="ptw xi1 ph hm mbw">{$_lang['no_qrcode_url']}</p>
+            <!--{/if}-->
+        </div>
+    </div>
+</div>
+{subtemplate common/footer}
