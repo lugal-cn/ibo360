@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+ul.cat-art-list-simple, ul.cat-art-list-simple li {
+	float: left;
+	margin-right: 20px;
+}
+
+ul.cat-art-list-simple li {
+	width: 30%;
+}
+
+li.mod-3 {
+	margin-right: 0px !important;
+	padding-right: 0px !important;
+}

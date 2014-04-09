@@ -1,20 +1,20 @@
 @CHARSET "UTF-8";
 
 .portal_hd {
-	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
-.pin-icon-title-1 .frame-title .titletext {
+.remove-pin-icon-title-1 .frame-title .titletext {
 	background: transparent url({IMGDIR}/pin-icon-1.png) no-repeat 0 100%;
 	padding-left: 30px;
 }
 
-.pin-icon-title-2 .frame-title .titletext {
+.remove-pin-icon-title-2 .frame-title .titletext {
 	background: transparent url({IMGDIR}/pin-icon-2.png) no-repeat 0 100%;
 	padding-left: 30px;
 }
 
-.pin-icon-title-3 .frame-title .titletext {
+.remove-pin-icon-title-3 .frame-title .titletext {
 	background: transparent url({IMGDIR}/pin-icon-3.png) no-repeat 0 100%;
 	padding-left: 30px;
 }
@@ -36,4 +36,9 @@
 #nv {
 	border: none;
 	display: none;
+}
+
+.cat-join-link a {
+	font-size: 11px;
+	font-weight: normal;
 }

@@ -1781,9 +1781,22 @@ DIY图片幻灯片未加载时隐藏,模块标识隐藏
 		.pgbtn a:active { background: #EEE; border-color: #D0D0D0; box-shadow: none; }
 		
 /* 自定义公用样式 */
+#lsform,
+#scbar,
+#um,
 #nv {
 	display: none;
 }
 
-.frame-1-1, .frame-1-1-1, .frame-1-2, .frame-2-1, .frame-1-3, .frame-3-1 { background-image: url({STATICURL}image/diy/vline.png); background-repeat: repeat-y; }
-.frame-1-1, .frame-1-1-1 { background-position: 50% 0; }
+.article-pic-list .module.cl.ml span.ticket {
+	margin-top: -20px;
+}
+
+.article-pic-list .module.cl.ml span.ticket a{
+	color: white;
+}
+
+#toptb {
+	height: 29px;
+	overflow: hidden;
+}

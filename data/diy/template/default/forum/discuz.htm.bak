@@ -26,7 +26,7 @@
 	<!--{ad/text/wp a_t}-->
 <!--{/if}-->
 
-	<style id="diy_style" type="text/css">#framerF4ntu { border:#000000 1px dotted !important;margin-top:0px !important;margin-right:0px !important;margin-bottom:10px !important;margin-left:0px !important;}</style>
+	<style id="diy_style" type="text/css">#framerF4ntu {  border:#000000 1px dotted !important;margin-top:10px !important;margin-right:0px !important;margin-bottom:10px !important;margin-left:0px !important;}</style>
 
 <!--{if empty($gid)}-->
 	<div class="wp">

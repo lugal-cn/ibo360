@@ -1,0 +1,139 @@
+<!--{template common/header}-->
+<!--[name]ibo360自定义文章列表[/name]-->
+
+<!--{eval $list = array();}-->
+<!--{eval $wheresql = category_get_wheresql($cat);}-->
+<!--{eval $list = category_get_list($cat, $wheresql, $page);}-->
+
+<!--{eval $data = array();}-->
+<!--{eval $wheresql = category_get_wheresql($cat);}-->
+<!--{eval $data = category_get_list_more($cat, $wheresql);}-->
+
+<link rel="stylesheet" id="css_widthauto" type="text/css" href="data/cache/style_{STYLEID}_ibo_portal_list.css?{VERHASH}" />
+
+<div id="pt" class="bm cl">
+	<div class="z">
+		<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a> <em>&rsaquo;</em>
+		<a href="$_G[setting][navs][1][filename]">{lang portal}</a> <em>&rsaquo;</em>
+		<!--{loop $cat[ups] $value}--> <a href="{$portalcategory[$value['catid']]['caturl']}">$value[catname]</a><em>&rsaquo;</em><!--{/loop}-->
+		$cat[catname]
+	</div>
+</div>
+
+<!--{ad/text/wp a_t}-->
+<style id="diy_style" type="text/css"></style>
+<div class="wp">
+	<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div>
+
+<div id="ct" class="ct2 wp cl">
+	<div class="mn">
+		<!--{ad/articlelist/mbm hm/1}--><!--{ad/articlelist/mbm hm/2}-->
+		<!--[diy=listcontenttop]--><div id="listcontenttop" class="area"></div><!--[/diy]-->
+		<div class="bm">
+			<div class="bm_h cl">
+				<!--{if $_G[setting][rssstatus] && !$_GET['archiveid']}--><a href="portal.php?mod=rss&catid=$cat[catid]" class="y xi2 rss" target="_blank" title="RSS">{lang rss_subscribe_this}</a><!--{/if}-->
+				<!--{if ($_G['group']['allowpostarticle'] || $_G['group']['allowmanagearticle'] || $categoryperm[$catid]['allowmanage'] || $categoryperm[$catid]['allowpublish']) && empty($cat['disallowpublish'])}-->
+				<a href="portal.php?mod=portalcp&ac=article&catid=$cat[catid]" class="y xi2 addnew">{lang article_publish}</a>
+				<!--{/if}-->
+				<h1 class="xs2">$cat[catname]</h1>
+			</div>
+			<!--{if $cat[subs]}-->
+			<div class="bm_c bbda">
+				{lang sub_category}:&nbsp;&nbsp;
+				<!--{eval $i = 1;}-->
+				<!--{loop $cat[subs] $value}-->
+				<!--{if $i != 1}--><span class="pipe">|</span><!--{/if}--><a href="{$portalcategory[$value['catid']]['caturl']}" class="xi2">$value[catname]</a><!--{eval $i--;}-->
+				<!--{/loop}-->
+			</div>
+			<!--{/if}-->
+			<div class="bm_c xld">
+				<ul class="cat-art-list-simple">
+				<!--{eval $i=0;}-->
+				<!--{loop $list['list'] $value}-->
+      			<!--{eval $i++}-->
+					<!--{eval $highlight = article_title_style($value);}-->
+					<!--{eval $article_url = fetch_article_url($value);}-->
+						<!--{eval $article_url = fetch_article_url($value);}-->
+						<li class="<!--{eval if(!($i % 3)) echo 'mod-3';}-->">&bull; <a href="$article_url">$value[title]</a></li>
+				<!--{/loop}-->
+				</ul>
+				<div style="clear: left;">&nbsp;</div>
+			</div>
+			<!--[diy=listloopbottom]--><div id="listloopbottom" class="area"></div><!--[/diy]-->
+		</div>
+		<!--{ad/articlelist/mbm hm/3}--><!--{ad/articlelist/mbm hm/4}-->
+		<!--{if $list['multi']}--><div class="pgs cl">{$list['multi']}</div><!--{/if}-->
+
+		<!--[diy=diycontentbottom]--><div id="diycontentbottom" class="area"></div><!--[/diy]-->
+
+	</div>
+	<div class="sd">
+
+		<div class="drag">
+			<!--[diy=diyrighttop]--><div id="diyrighttop" class="area"></div><!--[/diy]-->
+		</div>
+
+<!--{if $cat[others]}-->
+		<div class="bm">
+			<div class="bm_h cl">
+				<h2>{lang category_related}</h2>
+			</div>
+			<div class="bm_c">
+				<ul class="xl xl2 cl">
+					<!--{loop $cat[others] $value}-->
+					<li><a href="{$portalcategory[$value['catid']]['caturl']}">$value[catname]</a></li>
+					<!--{/loop}-->
+				</ul>
+			</div>
+		</div>
+<!--{/if}-->
+
+		<div class="drag">
+			<!--[diy=newarticletop]--><div id="newarticletop" class="area"></div><!--[/diy]-->
+		</div>
+
+<!--{if $data['portalnewarticle']}-->
+		<div class="bm">
+			<div class="bm_h cl">{lang museum_last}</div>
+			<div class="bm_c">
+				<ul class="xl xl1">
+					<!--{loop $data['portalnewarticle'] $value}-->
+						<!--{eval $article_url = fetch_article_url($value);}-->
+						<li><a href="$article_url">$value[title]</a></li>
+					<!--{/loop}-->
+				</ul>
+			</div>
+		</div>
+<!--{/if}-->
+
+		<div class="drag">
+			<!--[diy=hotarticletop]--><div id="hotarticletop" class="area"></div><!--[/diy]-->
+		</div>
+
+<!--{if $data['portalhotarticle']}-->
+		<div class="bm">
+			<div class="bm_h cl">{lang museum_hot}</div>
+			<div class="bm_c">
+				<ul class="xl xl1">
+					<!--{loop $data['portalhotarticle'] $value}-->
+						<!--{eval $article_url = fetch_article_url($value);}-->
+						<li><a href="$article_url">$value[title]</a></li>
+					<!--{/loop}-->
+				</ul>
+			</div>
+		</div>
+<!--{/if}-->
+
+		<div class="drag">
+			<!--[diy=diy2]--><div id="diy2" class="area"></div><!--[/diy]-->
+		</div>
+
+	</div>
+</div>
+
+<div class="wp mtn">
+	<!--[diy=diy3]--><div id="diy3" class="area"></div><!--[/diy]-->
+</div>
+
+<!--{template common/footer}-->

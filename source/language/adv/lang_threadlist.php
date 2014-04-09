@@ -13,12 +13,12 @@ if(!defined('IN_DISCUZ')) {
 
 $lang = array
 (
-	'threadlist_name' => '论坛/群组 帖子列表帖位广告',
+	'threadlist_name' => '论坛/博物馆小站 帖子列表帖位广告',
 	'threadlist_desc' => '展现方式: 帖位广告显示于帖子列表页第一页的帖子位置，可以模拟出一个具有广告意义的帖子地址，吸引访问者的注意力。',
 	'threadlist_fids' => '投放版块',
 	'threadlist_fids_comment' => '设置广告投放的论坛版块，当广告投放范围中包含“论坛”时有效',
-	'threadlist_groups' => '投放群组分类',
-	'threadlist_groups_comment' => '设置广告投放的群组分类，当广告投放范围中包含“群组”时有效',
+	'threadlist_groups' => '投放博物馆小站分类',
+	'threadlist_groups_comment' => '设置广告投放的博物馆小站分类，当广告投放范围中包含“博物馆小站”时有效',
 	'threadlist_pos' => '投放位置',
 	'threadlist_pos_comment' => '设置在主题列表的第几个主题位置显示此广告，如不指定则将随机位置显示',
 	'threadlist_mode' => '显示模式',

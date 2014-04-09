@@ -819,7 +819,7 @@ $lang = array (
   'pm_ignore_error_nopm' => '抱歉，您指定的用户不存在或被冻结',
   'pm_kickmember_error_nopm' => '抱歉，您要踢除的用户不存在或被冻结',
   'pm_appendkmember_error_nopm' => '抱歉，您要添加的用户不存在或被冻结',
-  'message_can_not_append_reason' => '抱歉，以下用户列表加入群组失败 {cannotappend}',
+  'message_can_not_append_reason' => '抱歉，以下用户列表加入博物馆小站失败 {cannotappend}',
   'pm_export_touser_not_exists' => '抱歉，您尚未指定导出短消息对象',
   'pm_emport_banned_export' => '抱歉，没有用于导出的短消息记录',
 
